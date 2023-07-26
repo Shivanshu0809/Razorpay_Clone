@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger{
+    position: relative;
+    display: block;
+    border: none;
+    background: none;
+    outline:none;
+    width: 35px;
+    appearance: none;
+    cursor: pointer;
+
+}
+.hamburger  .log-in , .hamburger:after, .hamburger:before{
+
+    content: " ";
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+   @media(max-width: 1030px)
+   {
+     .hamburger .log-in  .hamburger:after, .hamburger:before {
+        display:none;
+        
+
+
+       }
+   }
+  
